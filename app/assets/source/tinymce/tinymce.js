@@ -33182,7 +33182,7 @@ define("tinymce/util/Quirks", [
 					return;
 				}
 
-				startBlock = dom.getParent(RangeUtils.getNode(rng.startContainer, rng.startOffset), dom.isBlock);
+				startBlock = dom.getParent(RangeUtils.getNode(rng.startContainer, rng.startOffset));
 				endBlock = dom.getParent(RangeUtils.getNode(rng.endContainer, rng.endOffset), dom.isBlock);
 				textBlockElements = editor.schema.getTextBlockElements();
 
